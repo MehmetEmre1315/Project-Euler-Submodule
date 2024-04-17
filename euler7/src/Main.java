@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
+    // firt
     public static void main(String[] args) {
         List<Long> bigList = new ArrayList<>();
         List<Long> primeList = new ArrayList<>();
