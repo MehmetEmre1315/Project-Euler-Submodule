@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/euler5/euler5.iml" filepath="$PROJECT_DIR$/euler5/euler5.iml" />
       <module fileurl="file://$PROJECT_DIR$/euler6/euler6.iml" filepath="$PROJECT_DIR$/euler6/euler6.iml" />
       <module fileurl="file://$PROJECT_DIR$/euler7/euler7.iml" filepath="$PROJECT_DIR$/euler7/euler7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/euler8/euler8.iml" filepath="$PROJECT_DIR$/euler8/euler8.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/projectEuler.iml" filepath="$PROJECT_DIR$/.idea/projectEuler.iml" />
     </modules>
   </component>
