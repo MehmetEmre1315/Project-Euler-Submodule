@@ -8,6 +8,9 @@ public class Main {
     //fourth
     //fifth
     //sixth
+
+
+    // develop 1
     public static void main(String[] args) {
         List<Long> bigList = new ArrayList<>();
         List<Long> primeList = new ArrayList<>();
