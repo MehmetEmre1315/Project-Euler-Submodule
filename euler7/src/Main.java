@@ -3,6 +3,11 @@ import java.util.List;
 
 public class Main {
     // firt
+    //second
+    //third
+    //fourth
+    //fifth
+    //sixth
     public static void main(String[] args) {
         List<Long> bigList = new ArrayList<>();
         List<Long> primeList = new ArrayList<>();
