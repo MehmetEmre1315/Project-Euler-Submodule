@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 public class Main {
-
     static boolean isPrime (long n) {
         if (n < 2) return false;
         if (n == 2) return true;
@@ -14,8 +13,8 @@ public class Main {
     public static void main(String[] args) {
         List<Long> bigList = new ArrayList<>();
         List<Long> primeList = new ArrayList<>();
-
         bigList.add(2L);
+
         for (long i = 3L;  i <= 2000000L; i+=2) {
             bigList.add(i);
         }
