@@ -36,6 +36,7 @@ public class Main {
         while (numberCollection.size() < 13) {
             numberCollection.add(numbers.get(0));
             numbers.remove(0);
+
             if (numberCollection.size() == 13) {
                 for (int number : numberCollection) {
                     n0 *= number;
@@ -49,8 +50,8 @@ public class Main {
             if (numbers.size() == 0) {
                 break;
             }
-
         }
+
         System.out.println(answer);
     }
 }
