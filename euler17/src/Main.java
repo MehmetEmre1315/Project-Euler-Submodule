@@ -100,6 +100,6 @@ public class Main {
         for (String s : numberToWritings) {
             answer += s.length();
         }
-        System.out.println("Answer: " + answer);
+        System.out.println("Answer: " + answer); //21124
     }
 }
