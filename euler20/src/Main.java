@@ -23,13 +23,12 @@ public class Main {
         for (int i = bigNumberInArraySize - 1; i >= 0; i--) {
             System.out.print(bigNumberInArray[i]);
         }
+
         int answer = 0;
         for (int i = bigNumberInArraySize - 1; i >= 0; i--) {
             answer += bigNumberInArray[i];
         }
+
         System.out.println("\nAnswer is " + answer);
-
-
-
     }
 }
