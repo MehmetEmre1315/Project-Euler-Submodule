@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     static int sumOfDividers (int number) {
@@ -30,19 +28,20 @@ public class Main {
         }
 
         List<Integer> sumOfTwoAbundantNumbers = new ArrayList<>();
-        for (Integer abundantNumber1 : abundantNumbers) {
-            for (Integer abundantNumber2 : abundantNumbers) {
-                if (abundantNumber1 + abundantNumber2 > 28123) break;
-                sumOfTwoAbundantNumbers.add(abundantNumber1 + abundantNumber2);
+        for (int i = 0; i < abundantNumbers.size(); i++) {
+            for (int j = i; j < abundantNumbers.size(); j++) {
+                if (abundantNumbers.get(i) + abundantNumbers.get(j) > 28123) break;
+                sumOfTwoAbundantNumbers.add(abundantNumbers.get(i) + abundantNumbers.get(j));
             }
         }
-        Arrays.sort(sumOfTwoAbundantNumbers.toArray());
+
+        //To remove multiple occurrences of the same number
+        Set<Integer> uniqueSet = new HashSet<>(sumOfTwoAbundantNumbers);
+        List<Integer> uniqueSumOfTwoAbundantNumbers = new ArrayList<>(uniqueSet);
 
         long answer = 0;
-        List<Integer> notSumOfTwoAbundantNumbers = new ArrayList<>();
         for (int i = 1; i < 28124; i++) {
-            if (!sumOfTwoAbundantNumbers.contains(i)) {
-                notSumOfTwoAbundantNumbers.add(i);
+            if (!uniqueSumOfTwoAbundantNumbers.contains(i)) {
                 answer += i;
             }
         }
@@ -52,8 +51,5 @@ public class Main {
         System.out.println("Execution Time: " + ((double) elapsedTime) / 1000000000 + " seconds");
 
         System.out.println("Answer: " + answer);
-
-
-
     }
 }
